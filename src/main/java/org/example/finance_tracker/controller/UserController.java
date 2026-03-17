@@ -1,0 +1,23 @@
+package org.example.finance_tracker.controller;
+
+import org.example.finance_tracker.entity.UserEntity;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserController {
+
+
+    @GetMapping("/me")
+    public ResponseEntity<UserEntity> getCurrentUser(){
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        UserEntity user =(UserEntity) authentication.getPrincipal();
+
+        return ResponseEntity.ok(user);
+    }
+
+}
