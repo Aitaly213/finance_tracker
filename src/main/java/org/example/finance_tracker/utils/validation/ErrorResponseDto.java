@@ -1,4 +1,4 @@
-package org.example.finance_tracker.Utils.validation;
+package org.example.finance_tracker.utils.validation;
 
 import java.time.LocalDateTime;
 

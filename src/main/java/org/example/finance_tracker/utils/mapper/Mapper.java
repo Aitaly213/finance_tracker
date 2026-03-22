@@ -1,4 +1,4 @@
-package org.example.finance_tracker.Utils.mapper;
+package org.example.finance_tracker.utils.mapper;
 
 import org.example.finance_tracker.dto.BanksDto;
 import org.example.finance_tracker.dto.CategoryDto;

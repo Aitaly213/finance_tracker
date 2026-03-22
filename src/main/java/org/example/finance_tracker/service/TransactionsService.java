@@ -1,7 +1,7 @@
 package org.example.finance_tracker.service;
 
 import jakarta.persistence.EntityNotFoundException;
-import org.example.finance_tracker.Utils.mapper.Mapper;
+import org.example.finance_tracker.utils.mapper.Mapper;
 import org.example.finance_tracker.dto.CreateTransactionDto;
 import org.example.finance_tracker.dto.StatisticsDto;
 import org.example.finance_tracker.dto.TransactionResponseDto;

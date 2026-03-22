@@ -1,13 +1,12 @@
 package org.example.finance_tracker.service;
 
 import jakarta.persistence.EntityNotFoundException;
-import org.example.finance_tracker.Utils.mapper.Mapper;
+import org.example.finance_tracker.utils.mapper.Mapper;
 import org.example.finance_tracker.dto.CategoryDto;
 import org.example.finance_tracker.entity.CategoryEntity;
 import org.example.finance_tracker.entity.UserEntity;
 import org.example.finance_tracker.repository.CategoryRepository;
 import org.example.finance_tracker.repository.UserRepository;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
